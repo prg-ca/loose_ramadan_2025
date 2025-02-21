@@ -1,0 +1,116 @@
+body,
+body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #ecac06;
+}
+
+.container {
+  position: absolute;
+  width: 240px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px #50000e solid;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #ecab00;
+  background-image: url('bg.jpg');
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+#logo {
+  width: 140px;
+  left: 48px;
+  top: 70px;
+}
+
+#txt {
+  width: 140px;
+  left: 88px;
+  top: 290px;
+}
+
+#decor_top {
+  width: 19px;
+  left: 150px;
+  top: 262px;
+  transform-origin: center bottom;
+
+}
+
+#decor_bottom {
+  width: 19px;
+  left: 150px;
+  top: 360px;
+  transform-origin: center top;
+
+}
+
+#candies {
+  width: 240px;
+  left: -2px;
+  top: 210px;
+  transform: rotate(0deg);
+  /* transform: rotate(120deg); */
+  transform-origin: left top;
+}
+
+
+#lamps_l {
+  width: 56px;
+  left: -8px;
+  top: 11px;
+}
+#lamps_r {
+  width: 56px;
+  left: 190px;
+  top: 11px;
+}
+#top {
+  width: 240px;
+  left: 0px;
+  top: 0px;
+}
+#bottom {
+  width: 400px;
+  left: -80px;
+  top: initial;
+  bottom: -4px;
+}
+
+
+#schirm {
+  position: absolute;
+  width: 240px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-color: #ecab00;
+  /*background-image: url("bg01.jpg");*/
+  background-size: cover;
+  opacity: 0;
+}

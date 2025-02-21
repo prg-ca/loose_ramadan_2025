@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta name="ad.size" content="width=300,height=600" />
+    <meta name="ad.size" content="width=970,height=250" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="greensock.js"></script>
@@ -12,18 +12,19 @@
         TweenLite.lagSmoothing(0);
         var tl = new TimelineMax({ repeat: 2, repeatDelay: 5});
         // var tl = new TimelineMax();
-
+        
         tl.from("#schirm", 0.6, { autoAlpha: 1 })
-          .from("#candies", 0.9, { scale: 1.4, rotation: 160}, "-=0.6")
-          
-          .from("#txt", 0.6, { x: 200 }, "-=0.25")
-          .from("#decor_top", 0.6, { opacity: 0, scale: 0.2 }, "-=0.4")
-          .from("#decor_bottom", 0.6, { opacity: 0,  scale: 0.2 }, "-=0.6")
-          .from("#lamps_r", 0.6, {scale: 1.2, y: -300, }, "-=0.6")
-          .from("#top", 0.6, {scale: 1.6, y: -200 }, "-=0.5")
+          .from("#logo", 0.4, {  scale: 0.5, opacity: 0}, "-=0.5")
+          .from("#bottom", 0.6, {scale: 1.6, y: 200 }, "-=0.5")
+          .from("#lamps_r", 0.6, {scale: 1.2, y: -300, }, "-=0.2")
+          .from("#top", 0.6, {scale: 1.6, y: -230 }, "-=0.5")
           .from("#lamps_l", 0.6, {scale: 1.2, y: -260 }, "-=0.4")
-          .from("#bottom", 0.6, {scale: 1.6, y: 200 }, "-=0.4")
-          .from("#logo", 0.4, {  scale: 0.5, y: -300 }, "-=0.5")
+          .to("#logo", 0.4, {  scale: 0.65, x: 53, y: -28 }, "+=1.2")
+
+          .from("#candies", 0.8, { scale: 1.4, rotation: 160, y: -70, x: -75}, "-=0.7")
+          
+          .from("#txt", 0.6, { scale: 0.5, opacity: 0}, "-=0.5")
+
 
 
       });
@@ -38,15 +39,8 @@
         <div id="txt" class="el">
           <img src="txt.svg" />
         </div>
-        <div id="decor_top" class="el">
-          <img src="decor.svg" />
-        </div>
-        <div id="decor_bottom" class="el">
-          <img src="decor_b.svg" />
-        </div>
-        <div id="candies" class="el">
-          <img src="candies.png" />
-        </div>
+
+
         <div id="lamps_l" class="el">
           <img src="lamps.png" />
         </div>
@@ -59,7 +53,9 @@
         <div id="bottom" class="el">
           <img src="bottom.png" />
         </div>
-        
+        <div id="candies" class="el">
+          <img src="candies.png" />
+        </div>
 
         <div id="schirm"></div> 
       </div>
